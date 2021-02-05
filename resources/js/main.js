@@ -191,8 +191,3 @@ taskList.addEventListener('click', (event) => {
         deleteTask(id);
     }
 });
-
-
-
-// https://okiyitooo.github.io/catalyst-final-project-jwd/
-// https://github.com/okiyitooo/catalyst-final-project-jwd
