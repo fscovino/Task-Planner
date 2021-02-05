@@ -2,6 +2,8 @@
  *  Francisco, Kali, Hiruy, Kanaetochi
 */
 
+/* Initial Values */
+
 * {
     margin: 0;
     padding: 0;
@@ -16,7 +18,7 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-/* Start Adding Selectors here */
+/* Header Section */
 
 .navbar {
     background-color: black;
@@ -81,6 +83,11 @@ body {
 .form-task h2 {
     padding: 40px 0;
     font-weight: 500;
+}
+
+.error-msg {
+    color: red;
+    display: none;
 }
 
 /* Tasks Section */

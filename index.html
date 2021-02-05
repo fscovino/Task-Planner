@@ -77,28 +77,32 @@
               <h2>New Task</h2>
               <form>
                 <div class="form-group">
-                  <label for="task-name">Task Name</label>
+                  <label for="task-name">Task Title</label>
                   <input type="text" class="form-control" id="task-name">
+                  <p id="error-name" class="error-msg">* Task title should contain at least 3 letters</p>
                 </div>
                 <div class="form-group">
                   <label for="description">Description</label>
                   <textarea class="form-control" id="description" rows="4"></textarea>
+                  <p id="error-description" class="error-msg">* Description should contain at least 3 letters</p>
                 </div>
                 <div class="form-group">
                   <label for="assigned-to">Assigned To</label>
                   <input type="text" class="form-control" id="assigned-to">
+                  <p id="error-assign" class="error-msg">* A name should be added</p>
                 </div>
                 <div class="row">
                   <div class="col">
                     <div class="form-group">
                       <label for="due-date">Due Date</label>
                       <input type="date" class="form-control" id="due-date">
+                      <p id="error-date" class="error-msg">* Date cannot be empty</p>
                     </div>
                   </div>
                   <div class="col">
                     <div class="form-group">
                       <label for="d" style="color:white;">.</label>
-                      <p><button type="submit" class="btn btn-warning btn-block mb-2">Create</button></p>
+                      <p><input id="btn-create" type="button" class="btn btn-warning btn-block mb-2" value="Create" /></p>
                     </div>
                   </div>
                 </div>
@@ -108,66 +112,10 @@
             <div class="col-12 col-md-6 tasks">
               <h2>Pending Tasks</h2>
               <!-- List of Tasks -->
-              <ul class="list-group">
-                <!-- Single Task -->
-                <li class="list-group-item">
-                  <div class="task">
-                    <div class="task-top">
-                      <div><span class="task-title">TASK TITLE</span></div>
-                      <div><span class="badge badge-pill badge-success task-status">DONE</span></div>
-                    </div>
-                    <div class="task-desc">
-                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet accusamus consequuntur exercitationem. Aliquid consequuntur voluptas accusantium vitae illo natus obcaecati distinctio earum similique corporis ipsum dolorem autem quos quis, ratione nisi. Quas distinctio dolor amet in rem atque velit odio tenetur nihil inventore aut reiciendis, assumenda reprehenderit quasi delectus voluptas modi alias similique, doloribus veritatis. Error officiis explicabo voluptas iure, natus eligendi nulla voluptates ut hic inventore reiciendis fugiat saepe consequuntur vitae illum, sint nisi dignissimos cupiditate, aperiam eos ipsa magnam at! Natus saepe ex tenetur autem, sit esse fuga doloribus hic voluptate in rem vero recusandae, expedita ullam maiores.</p>
-                    </div>
-                    <div class="task-bottom">
-                      <div><span class="task-assign">Assigned Name</span></div>
-                      <div><a href="#" class="badge badge-success">Done</a></div>
-                      <div><a href="#" class="badge badge-danger">Delete</a></div>
-                      <div><span class="task-date">02/12/2021</span></div>
-                    </div>
-                  </div>
-                </li>
-                <!-- /End of Single Task -->
+              <ul id="task-list" class="list-group">
 
-                <!-- Single Task -->
-                <li class="list-group-item">
-                  <div class="task">
-                    <div class="task-top">
-                      <div><span class="task-title">TASK TITLE</span></div>
-                      <div><span class="badge badge-pill badge-warning task-status">PENDING</span></div>
-                    </div>
-                    <div class="task-desc">
-                      <p>Here comes the task description</p>
-                    </div>
-                    <div class="task-bottom">
-                      <div><span class="task-assign">Assigned Name</span></div>
-                      <div><a href="#" class="badge badge-success">Done</a></div>
-                      <div><a href="#" class="badge badge-danger">Delete</a></div>
-                      <div><span class="task-date">02/12/2021</span></div>
-                    </div>
-                  </div>
-                </li>
-                <!-- /End of Single Task -->
-
-                <!-- Single Task -->
-                <li class="list-group-item">
-                  <div class="task">
-                    <div class="task-top">
-                      <div><span class="task-title">TASK TITLE</span></div>
-                      <div><span class="badge badge-pill badge-danger task-status">DUE</span></div>
-                    </div>
-                    <div class="task-desc">
-                      <p>Here comes the task description</p>
-                    </div>
-                    <div class="task-bottom">
-                      <div><span class="task-assign">Assigned Name</span></div>
-                      <div><a href="#" class="badge badge-success">Done</a></div>
-                      <div><a href="#" class="badge badge-danger">Delete</a></div>
-                      <div><span class="task-date">02/12/2021</span></div>
-                    </div>
-                  </div>
-                </li>
-                <!-- /End of Single Task -->
+                <!-- Single Tasks -->
+                
               </ul>
             </div>
           </div>
@@ -188,6 +136,9 @@
       </nav>
     </footer>
 
+    <!-- Main Scripts-->
+    <script src="resources/js/main.js" type='module'></script>
+    <script src="resources/js/task.js" type='module'></script>
     <!-- jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
