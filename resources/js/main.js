@@ -101,7 +101,7 @@ function renderTask(task) {
     
     // Add data to the list element
     li.innerHTML = `
-    <li class="list-group-item">
+    <li class="list-group-item border-0">
         <div id='${task._id}' class="task">
             <div class="task-top">
                 <div><span class="task-title"'>${task._title}</span></div>
@@ -191,8 +191,3 @@ taskList.addEventListener('click', (event) => {
         deleteTask(id);
     }
 });
-
-
-
-// https://okiyitooo.github.io/catalyst-final-project-jwd/
-// https://github.com/okiyitooo/catalyst-final-project-jwd
