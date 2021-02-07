@@ -191,3 +191,5 @@ taskList.addEventListener('click', (event) => {
         deleteTask(id);
     }
 });
+
+/* Francisco, Kali, Hiruy, Kanaetochi */
