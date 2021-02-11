@@ -85,6 +85,14 @@ body {
     font-weight: 500;
 }
 
+input:hover, textarea:hover {
+    box-shadow: 0 0 5px 2px #ffc806;
+}
+
+input:focus, textarea:focus {
+    box-shadow: 0 0 5px 2px #ffc806 !important;
+}
+
 .error-msg {
     color: red;
     display: none;

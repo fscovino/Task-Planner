@@ -2,7 +2,7 @@
 /*
 * TASK CLASS
 */
-class Task {
+export class Task {
 
     // constructor
     constructor(num){
@@ -83,8 +83,7 @@ export class TaskManager {
     }
 
     getTask(id) {
-        const t = this._taskList.filter(task => task.id === id);
-        console.log(t);
+        const t = this._taskList.find(task => task.id === id);
         return t;
     }
 
