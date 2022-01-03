@@ -1,4 +1,4 @@
-# Junior Web Developer
+# Junior Web Developer  |  [View Live](https://fscovino.github.io/Task-Planner/)
 ## Final Project
 ### Task Planner Web App
 
